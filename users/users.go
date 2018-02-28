@@ -2,7 +2,7 @@ package users
 
 import (
 	"crypto/sha1"
-	"errors"
+	//"errors"
 	"fmt"
 	"io"
 	"strconv"
@@ -10,7 +10,7 @@ import (
 )
 
 var (
-	ErrNoCustomerInResponse = errors.New("Response has no matching customer")
+	//ErrNoCustomerInResponse = errors.New("Response has no matching customer")
 	ErrMissingField         = "Error missing %v"
 )
 

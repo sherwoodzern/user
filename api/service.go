@@ -143,10 +143,10 @@ func (s *fixedService) Health() []Health {
 	}
 
 	app := Health{"user", "OK", time.Now().String()}
-	db := Health{"user-db", dbstatus, time.Now().String()}
+	data := Health{"user-db", dbstatus, time.Now().String()}
 
 	health = append(health, app)
-	health = append(health, db)
+	health = append(health, data)
 
 	return health
 }
